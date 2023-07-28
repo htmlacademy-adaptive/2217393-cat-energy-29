@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [сергей ткаченко](https://up.htmlacademy.ru/adaptive/29/user/2217393).
-* Наставник: `Неизвестно`.
+* Студент: [Сергей Ткаченко](https://up.htmlacademy.ru/adaptive/29/user/2217393).
+* Наставник: [Максим Иванов](https://htmlacademy.ru/profile/id342945).
 
 ---
 
