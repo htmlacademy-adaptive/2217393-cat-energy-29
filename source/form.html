@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body class="page__body">
+    <header class="main-header style-line">
+      <div class="common-wrapper">
+        <a class="main-header__logo" href="index.html">
+          <img class="main-header__logo-image" src="./img/logo-mobile.svg" width="33" height="38" alt="Жизнерадостный кот">
+          <img class="main-header__logo-text" src="./img/logo-mobile-text.svg" width="101" height="18" alt="Функциональное питание для котов">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Меню</span>
+          </button>
+            <ul class="main-nav__list site-list style-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="index.html">главная</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="catalog.html">каталог продукции</a>
+              </li>
+              <li class="site-list__item site-list__item--current">
+                <a class="site-list__link" href="#">подбор программы</a>
+              </li>
+            </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page__main">
+      <h1 class="page__title page__title-form">Подбор программы</h1>
+      <section class="form">
+        <!-- <div class="wrapper"> -->
+        <h2 class="visually-hidden">Анкета для подбора программы питания</h2>
+        <p class="form-description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <form class="form-filters" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="form-filters__group">
+            <legend class="visually-hidden">Персональные данные кота</legend>
+            <label class="form-filters__label">
+              <span class="form-filters__text">Имя:*</span>
+              <input class="form-filters__input" type="text" name="cat-name" value="Барсик" placeholder="Укажите имя" required>
+            </label>
+            <label class="form-filters__label">
+              <span class="form-filters__text">Вес (кг):*</span>
+              <input class="form-filters__input" type="text" name="cat-weight" value="7" placeholder="Укажите вес" required>
+            </label>
+            <label class="form-filters__label">
+              <span class="form-filters__text">Возраст (лет):</span>
+              <input class="form-filters__input" type="text" name="cat-age" value="7" placeholder="Укажите возраст">
+            </label>
+          </fieldset>
+          <fieldset class="form-filters__group style-line style-line--top">
+            <legend class="visually-hidden">Цель программы питания:</legend>
+            <div class="wrapper">
+              <ul class="form-filters__list form-filters__list-programs style-list">
+                <li class="form-filters__item">
+                  <label class="form-filters__control">
+                    <input class="form-filters__control-input form-filters__control-input--checked" type="radio" name="goal" value="slim" checked>
+                    <span class="form-filters__control-label">Похудение</span>
+                  </label>
+                </li>
+                <li class="form-filters__item">
+                  <label class="form-filters__control">
+                    <input class="form-filters__control-input" type="radio" name="goal" value="pro">
+                    <span class="form-filters__control-label">Набор массы</span>
+                  </label>
+                </li>
+                <li class="form-filters__item">
+                  <label class="form-filters__control">
+                    <input class="form-filters__control-input" type="radio" name="goal" value="advice">
+                    <span class="form-filters__control-label">Не знаю (Нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="form-filters__group form-filters__group--contacts">
+            <legend class="form-filters__title">Контактные данные (владельца кота)</legend>
+            <label class="form-filters__label form-filters__label--contacts">
+              <span class="form-filters__text">E-mail:*</span>
+              <input class="form-filters__input" type="email" name="owner-email" value="kuklachev@gmail.com" placeholder="Укажите e-mail" required>
+            </label>
+            <label class="form-filters__label">
+              <span class="form-filters__text">Телефон:*</span>
+              <input class="form-filters__input" type="tel" name="owner-phone" value="8 (960) 900-60-90" placeholder="Укажите номер" required>
+            </label>
+          </fieldset>
+          <fieldset class="form-filters__group">
+            <legend class="form-filters__title">Комментарий</legend>
+            <label class="form-filters__label">
+              <textarea class="form-filters__comment" name="comment" rows="5">Расскажите обо всех повадках кота</textarea>
+            </label>
+          </fieldset>
+          <fieldset class="form-filters__group">
+            <legend class="form-filters__title">Дополнительно</legend>
+            <ul class="form-filters__list form-filters__list-additional style-list">
+              <li class="form-filters__item">
+                <label class="form-filters__control">
+                  <input class="form-filters__control-input" type="checkbox" name="sweetener" checked>
+                  <span class="control-label">сахарозаменитель</span>
+                  </label>
+              </li>
+              <li class="form-filters__item">
+                <label class="form-filters__control">
+                  <input class="form-filters__control-input" type="checkbox" name="milk">
+                  <span class="control-label">молоко</span>
+                </label>
+              </li>
+              <li class="form-filters__item">
+                <label class="form-filters__control">
+                  <input class="form-filters__control-input" type="checkbox" name="water">
+                  <span class="control-label">питьевая вода</span>
+                </label>
+              </li>
+              <li class="form-filters__item">
+                <label class="form-filters__control">
+                  <input class="form-filters__control-input" type="checkbox" name="vitamins">
+                  <span class="control-label">витамины</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="form-filters__button button button--primary" type="submit">отправить заявку</button>
+          <span class="form-filters__description">* — Обязательные поля</span>
+        </form>
+      </section>
+      <section class="map map--theme">
+        <div class="wrapper">
+          <h2 class="visually-hidden">Адрес Кэт Энерджи</h2>
+          <div class="map__adress-wrapper">
+            <p class="map__description">приглашаем к сотрудничеству дилеров!</p>
+            <p class="map__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          </div>
+          <img class="map__image" src="./img/map-mobile.jpg" width="320" height="363" alt="Карта с расположением Кэт Энерджи">
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="wrapper">
+        <a class="main-footer__link main-footer__position style-line" href="#">
+         <svg class="main-footer__logo" aria-hidden="true" focusable="false" width="128" height="24" viewBox="0 0 128 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.624 21.957A9.428 9.428 0 0 1 .02 16.238V7.762A9.559 9.559 0 0 1 1.523 1.94C2.625.613 4.327 0 6.831 0c2.503 0 4.106.613 5.107 1.736A7.433 7.433 0 0 1 13.44 6.74v2.043H8.533V6.434a5.116 5.116 0 0 0-.3-2.043 1.46 1.46 0 0 0-.579-.627 1.42 1.42 0 0 0-.823-.19c-.701 0-1.202.205-1.402.715a6.72 6.72 0 0 0-.3 2.247v10.928a4.3 4.3 0 0 0 .4 2.145c.2.51.701.714 1.402.714s1.102-.204 1.302-.715c.227-.69.33-1.417.3-2.144v-2.451h4.907v2.042a7.922 7.922 0 0 1-1.502 5.107C10.937 23.387 9.234 24 6.831 24c-2.403-.102-4.206-.715-5.207-2.043ZM19.348.306h5.708l4.206 23.285h-4.606l-.801-4.902H20.55l-.801 4.902h-4.707L19.348.306Zm4.106 15.32-1.202-9.09-1.201 9.09h2.403ZM32.767 4.187h-3.405V.307H41.28v3.778h-3.405v19.506h-5.107V4.188ZM50.392.306h8.812v2.451h-5.708v7.66h4.606v2.349h-4.606v8.579h5.708v2.349H50.29V.306h.1ZM61.808.306h2.203l6.509 15.422V.306h2.603v23.285h-2.002L64.51 7.66V23.59h-2.703V.306ZM76.128.306h8.812v2.451h-5.708v7.66h4.606v2.349h-4.606v8.579h5.708v2.349h-8.812V.306ZM87.543.306h4.607a7.896 7.896 0 0 1 5.107 1.43c1.102.92 1.602 2.553 1.602 4.698 0 2.962-.901 4.8-2.804 5.413l3.205 11.642h-3.105l-3.004-10.927h-2.503v10.927h-3.205V.306h.1Zm4.407 10.009a4.313 4.313 0 0 0 2.904-.817c.6-.51.901-1.532.901-3.064a6.722 6.722 0 0 0-.3-2.247 2.576 2.576 0 0 0-1.102-1.225 4.488 4.488 0 0 0-2.203-.409h-1.402v7.66h1.202v.102ZM102.865 21.855a10.485 10.485 0 0 1-1.402-5.923V8.17c-.025-1.48.144-2.957.501-4.391a5.186 5.186 0 0 1 1.902-2.656 6.438 6.438 0 0 1 3.705-.919c2.103 0 3.606.51 4.507 1.634a7.93 7.93 0 0 1 1.402 5.107v.817h-3.004v-.715c.004-.855-.063-1.71-.201-2.553a2.045 2.045 0 0 0-.801-1.328 3.05 3.05 0 0 0-1.903-.51 2.961 2.961 0 0 0-2.002.612 2.331 2.331 0 0 0-.801 1.634 19.568 19.568 0 0 0-.201 2.758v8.68a9.433 9.433 0 0 0 .601 3.881c.401.817 1.202 1.124 2.403 1.124.475.06.956-.024 1.384-.242.428-.218.782-.56 1.02-.984a9.572 9.572 0 0 0 .701-4.085V14.4h-2.904v-2.349h5.808v11.54h-2.003l-.3-2.655a4.172 4.172 0 0 1-1.553 2.202 4.03 4.03 0 0 1-2.553.76 4.924 4.924 0 0 1-2.406-.468 5.032 5.032 0 0 1-1.9-1.575ZM119.989 15.421 115.082.408h3.004l3.505 11.235L124.996.408H128l-4.907 15.013v8.17h-3.004v-8.17h-.1Z" fill="#111"/></svg>
+        </a>
+        <ul class="main-footer__social-list main-footer__position style-list style-line">
+          <li class="main-footer__social-item">
+            <a class="main-footer__link" href="https://vk.com/htmlacademy">
+
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="main-footer__social-item">
+            <a class="main-footer__link" href="https://www.youtube.com/user/htmlacademyru">
+
+              <span class="visually-hidden">Ютьюб</span>
+            </a>
+          </li>
+          <li class="main-footer__social-item">
+            <a class="main-footer__link" href="https://t.me/htmlacademy">
+
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+        </ul>
+        <a class="main-footer__link footer-copyright" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="main-footer__copyright">HTML Academy</span>
+
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
