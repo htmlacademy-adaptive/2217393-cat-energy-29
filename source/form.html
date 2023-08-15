@@ -33,7 +33,7 @@
     <main class="page__main">
       <h1 class="page__title page__title-form">Подбор программы</h1>
       <section class="form">
-        <div class="wrapper">
+        <!-- <div class="wrapper"> -->
         <h2 class="visually-hidden">Анкета для подбора программы питания</h2>
         <p class="form-description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form class="form-filters" action="https://echo.htmlacademy.ru/" method="post">
@@ -52,33 +52,31 @@
               <input class="form-filters__input" type="text" name="cat-age" value="7" placeholder="Укажите возраст">
             </label>
           </fieldset>
-            </div>
           <fieldset class="form-filters__group style-line style-line--top">
             <legend class="visually-hidden">Цель программы питания:</legend>
             <div class="wrapper">
-            <ul class="form-filters__list form-filters__list-programs style-list">
-              <li class="form-filters__item">
-                <label class="form-filters__control">
-                  <input class="form-filters__control-input form-filters__control-input--checked" type="radio" name="goal" value="slim" checked>
-                  <span class="form-filters__control-label">Похудение</span>
-                </label>
-              </li>
-              <li class="form-filters__item">
-                <label class="form-filters__control">
-                  <input class="form-filters__control-input" type="radio" name="goal" value="pro">
-                  <span class="form-filters__control-label">Набор массы</span>
-                </label>
-              </li>
-              <li class="form-filters__item">
-                <label class="form-filters__control">
-                  <input class="form-filters__control-input" type="radio" name="goal" value="advice">
-                  <span class="form-filters__control-label">Не знаю (Нужен ваш совет)</span>
-                </label>
-              </li>
-            </ul>
-          </div>
+              <ul class="form-filters__list form-filters__list-programs style-list">
+                <li class="form-filters__item">
+                  <label class="form-filters__control">
+                    <input class="form-filters__control-input form-filters__control-input--checked" type="radio" name="goal" value="slim" checked>
+                    <span class="form-filters__control-label">Похудение</span>
+                  </label>
+                </li>
+                <li class="form-filters__item">
+                  <label class="form-filters__control">
+                    <input class="form-filters__control-input" type="radio" name="goal" value="pro">
+                    <span class="form-filters__control-label">Набор массы</span>
+                  </label>
+                </li>
+                <li class="form-filters__item">
+                  <label class="form-filters__control">
+                    <input class="form-filters__control-input" type="radio" name="goal" value="advice">
+                    <span class="form-filters__control-label">Не знаю (Нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
-          <div class="wrapper">
           <fieldset class="form-filters__group form-filters__group--contacts">
             <legend class="form-filters__title">Контактные данные (владельца кота)</legend>
             <label class="form-filters__label form-filters__label--contacts">
@@ -128,7 +126,6 @@
           <button class="form-filters__button button button--primary" type="submit">отправить заявку</button>
           <span class="form-filters__description">* — Обязательные поля</span>
         </form>
-          </div>
       </section>
       <section class="map map--theme">
         <div class="wrapper">
@@ -140,6 +137,7 @@
           <img class="map__image" src="./img/map-mobile.jpg" width="320" height="363" alt="Карта с расположением Кэт Энерджи">
         </div>
       </section>
+    </main>
     <footer class="main-footer">
       <div class="wrapper">
         <a class="main-footer__link main-footer__position style-line" href="#">
